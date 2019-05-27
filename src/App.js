@@ -8,6 +8,7 @@ function App() {
     <div>
       <AboutUs />
       <Feature />
+      <Feature swap={true} />
     </div>
   );
 }
