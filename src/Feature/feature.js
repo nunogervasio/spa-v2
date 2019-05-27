@@ -1,20 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./card";
+import Card from "../AboutUs/card";
 import { Section } from "../components/section";
 import { Container } from "../components/container";
 
-// const AboutUs = () => {
-const AboutUs = () => {
+const Feature = () => {
   return (
     <Section>
       <Container>
-        <Card />
-        <Card />
         <Card />
       </Container>
     </Section>
   );
 };
 
-export default AboutUs;
+export default Feature;

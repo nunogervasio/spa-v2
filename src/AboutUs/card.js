@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Button } from "./button";
 import { Paragraph } from "./paragraph";
 import { Image } from "./image";
-import { Container } from "./container";
+import { Container } from "../components/container";
 import { Title } from "./title";
 import yogi from "../images/yoga-guy.jpg";
 
