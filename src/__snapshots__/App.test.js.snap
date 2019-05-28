@@ -2,10 +2,12 @@
 
 exports[`renders properly 1`] = `
 <div>
+  <Header />
   <AboutUs />
   <Feature />
   <Feature
     swap={true}
   />
+  <Footer />
 </div>
 `;
