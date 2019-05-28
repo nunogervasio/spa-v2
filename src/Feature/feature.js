@@ -1,58 +1,58 @@
 import React from "react";
 import styled from "styled-components";
-import { Image } from "../components/image";
-import { Section } from "../components/section";
-import { Container } from "../components/container";
-import { Button } from "../components/button";
-import { Paragraph } from "../components/paragraph";
-import { Title } from "../components/title";
-import yogi from "../images/yoga-guy.jpg";
+import { Container, Section, Title, Paragraph, Button } from "../components";
+import img from "../images/loading-dock.jpg";
 
-const FeatureContainer = styled.div`
-  display: flex;
+const HeaderSection = styled(Section)`
   flex-direction: column;
-  @media (min-width: 768px) {
-    flex-direction: row;
+  ${"" /* height: 75vh; */}
+  background-color: cornflowerblue;
+  ${"" /* height: 600px; */}
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 `;
-
-const ImgWrapper = styled.div`
-  max-width: 600px;
-  max-height: 400px;
-  margin: 0.75em;
-  order: 0;
+const HeaderImage = styled.div`
+  background: url(${img}) no-repeat center/cover;
+  height: auto;
 `;
 
-const FeatureText = styled.div`
-  max-width: 600px;
-  max-height: 400px;
-  margin: 0.75em;
+const TitlePrimary = styled(Title)`
+  font-size: 2.2rem;
+  margin: 0;
+`;
+const TitleWrapper = styled.div`
+  padding: 4em;
+  color: lavenderblush;
   display: flex;
   flex-direction: column;
-  order: ${props => (props.swap === true ? -1 : 0)};
+  justify-content: center;
 `;
-const Feature = ({ swap }) => {
-  return (
-    <Section>
-      <Container>
-        <FeatureContainer>
-          <ImgWrapper>
-            <Image src={yogi} />
-          </ImgWrapper>
 
-          <FeatureText swap={swap}>
-            <Title>Default Title</Title>
-            <Paragraph>
-              Ofrecemos diferentes tipos de yoga, power ashtanga, vinyasa flow,
-              vinyasa chakra, yin y pilates. Con más de 20 clases por semana y
-              una variedad de instructores certificados, nuestro horario y
-              clases son para estudiantes de todos los niveles.
-            </Paragraph>
-            <Button>Normal</Button>
-          </FeatureText>
-        </FeatureContainer>
-      </Container>
-    </Section>
+const Feature = () => {
+  return (
+    <HeaderSection>
+      <HeaderImage />
+
+      <TitleWrapper>
+        <TitlePrimary>
+          We Provide The Best Solution For Your Transport
+        </TitlePrimary>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          nibh urna Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Vestibulum nibh urna Lorem
+          ipsum dolor sit amet, consectetur
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          nibh urna Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+        </Paragraph>
+      </TitleWrapper>
+    </HeaderSection>
   );
 };
 
