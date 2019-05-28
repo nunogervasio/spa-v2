@@ -4,33 +4,34 @@ import { Button } from "./button";
 import { Paragraph } from "./paragraph";
 import { Image } from "./image";
 import { Title } from "./title";
-import yogi from "../images/yoga-guy.jpg";
+import yogi from "../images/t1.jpg";
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  max-width: 1100px;
+  ${"" /* max-width: 1100px; */}
   margin: 0.75em;
   padding: 0.5em;
   background-color: white;
   border-radius: 2%;
 `;
 
+const EmpImage = styled(Image)`
+  border-radius: 50%;
+`;
 export const Card = () => {
   return (
     <CardContainer>
       {/* <Image src="https://via.placeholder.com/260" /> */}
-      <Image src={yogi} />
+      <EmpImage src={yogi} />
       <Title>Default Title</Title>
       <Paragraph>
-        Ofrecemos diferentes tipos de yoga, power ashtanga, vinyasa flow,
-        vinyasa chakra, yin y pilates. Con más de 20 clases por semana y una
-        variedad de instructores certificados, nuestro horario y clases son para
-        estudiantes de todos los niveles.
+        Lorem ipsum dolor sit amet consectetur adipiscing elit.
       </Paragraph>
-      <Button>Normal</Button>
+      <Button>Profile</Button>
       {/* <Button primary>Normal Plus</Button> */}
     </CardContainer>
   );
