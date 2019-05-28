@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Button } from "./button";
 import { Paragraph } from "./paragraph";
 import { Image } from "./image";
-import { Container } from "../components/container";
 import { Title } from "./title";
 import yogi from "../images/yoga-guy.jpg";
 
@@ -19,7 +18,7 @@ const CardContainer = styled.div`
   border-radius: 2%;
 `;
 
-const Card = () => {
+export const Card = () => {
   return (
     <CardContainer>
       {/* <Image src="https://via.placeholder.com/260" /> */}
@@ -36,5 +35,3 @@ const Card = () => {
     </CardContainer>
   );
 };
-
-export default Card;

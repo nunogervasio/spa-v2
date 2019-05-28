@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./card";
-import { Section } from "../components/section";
-import { Container } from "../components/container";
+import { Card, Section, Container } from "../components";
 
 // const AboutUs = () => {
 const AboutUs = () => {

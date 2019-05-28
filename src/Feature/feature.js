@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Image } from "../AboutUs/image";
+import { Image } from "../components/image";
 import { Section } from "../components/section";
 import { Container } from "../components/container";
-import { Button } from "../AboutUs/button";
-import { Paragraph } from "../AboutUs/paragraph";
-import { Title } from "../AboutUs/title";
+import { Button } from "../components/button";
+import { Paragraph } from "../components/paragraph";
+import { Title } from "../components/title";
 import yogi from "../images/yoga-guy.jpg";
 
 const FeatureContainer = styled.div`
