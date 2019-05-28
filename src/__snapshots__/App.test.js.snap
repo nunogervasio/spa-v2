@@ -4,10 +4,10 @@ exports[`renders properly 1`] = `
 <div>
   <Header />
   <AboutUs />
+  <Services />
   <Feature />
-  <Feature
-    swap={true}
-  />
+  <Team />
   <Footer />
+  <GlobalStyleComponent />
 </div>
 `;

@@ -1,11 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders properly 1`] = `
-<styled.section>
-  <styled.div>
-    <Card />
-    <Card />
-    <Card />
-  </styled.div>
-</styled.section>
+<Styled(styled.section)>
+  <Styled(styled.div)>
+    <styled.h1>
+      About Us
+    </styled.h1>
+    <Styled(styled.h1)>
+      What We Provide The Best
+    </Styled(styled.h1)>
+    <styled.p>
+      sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet
+    </styled.p>
+    <styled.button>
+      Read More
+    </styled.button>
+  </Styled(styled.div)>
+  <Styled(styled.div)>
+    <styled.div>
+      <Styled(styled.img)
+        src="delivery-truck.svg"
+      />
+      <styled.h1>
+        Land Transport
+      </styled.h1>
+    </styled.div>
+    <styled.div>
+      <Styled(styled.img)
+        src="delivery-truck.svg"
+      />
+      <styled.h1>
+        Land Transport
+      </styled.h1>
+    </styled.div>
+    <styled.div>
+      <Styled(styled.img)
+        src="delivery-truck.svg"
+      />
+      <styled.h1>
+        Land Transport
+      </styled.h1>
+    </styled.div>
+    <styled.div>
+      <Styled(styled.img)
+        src="delivery-truck.svg"
+      />
+      <styled.h1>
+        Land Transport
+      </styled.h1>
+    </styled.div>
+  </Styled(styled.div)>
+</Styled(styled.section)>
 `;
