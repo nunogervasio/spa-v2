@@ -5,13 +5,12 @@ import { Container } from "../components/container";
 
 const FooterSection = styled.div`
   background-color: peru;
-  background-color: wheat;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   padding: 4rem;
 `;
 const FooterContainer = styled.div`
-  background-color: wheat;
   display: flex;
   flex-direction: column;
   width: 1100px;
@@ -122,7 +121,7 @@ const Footer = () => {
           </ul>
         </FooterContainer>
       </FooterSection>
-      <FooterBottom>Copyright &copy; 2019 Orange myTunes</FooterBottom>
+      <FooterBottom>Copyright &copy; 2019 Cargos</FooterBottom>
     </React.Fragment>
   );
 };
