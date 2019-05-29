@@ -6,7 +6,7 @@ import img from "../images/loading-dock2.jpg";
 const HeaderSection = styled(Section)`
   flex-direction: column;
   ${"" /* height: 75vh; */}
-  background-color: cornflowerblue;
+  background-color: midnightblue;
   ${"" /* height: 600px; */}
 
   @media (min-width: 992px) {
