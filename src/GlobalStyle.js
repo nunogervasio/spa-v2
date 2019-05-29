@@ -22,9 +22,33 @@ body {
 img {
 
 }
-
+ul{
+  list-style: none;
+  padding: 0;
+  margins: 0;
+}
 a {
+  text-decoration: none;
+/* unvisited link */
+:link {
+  color: #fff;
+  
+}
 
+/* visited link */
+:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+:hover {
+  color: hotpink;
+}
+
+/* selected link */
+:active {
+  color: blue;
+}
 }
 
 #music:target,
