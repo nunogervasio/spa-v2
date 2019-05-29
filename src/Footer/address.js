@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Title, Paragraph } from "../components";
 
 const FooterAddress = styled.div`
+  text-align: center;
+  @media (min-width: 482px) {
+    text-align: left;
+  }
   line-height: 100%;
   li,
   li h5,
@@ -14,7 +18,10 @@ const FooterAddress = styled.div`
   }
 `;
 const FooterTitle = styled(Title)`
-  text-align: left;
+  text-align: center;
+  @media (min-width: 482px) {
+    text-align: left;
+  }
 `;
 // also in newletter -> refactor
 const FooterPara = styled(Paragraph)`

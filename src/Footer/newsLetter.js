@@ -6,6 +6,7 @@ import { FaEnvelope, FaFacebook, FaTwitter, FaRss } from "react-icons/fa";
 const Form = styled.div`
   input {
     border: 1px solid #fff;
+    width: auto;
   }
   button {
     border: 1px solid transparent;
@@ -31,43 +32,51 @@ const MediaIcon = styled.div`
   display: inline;
   margin: 0 6px;
 `;
+const CenterText = styled.div`
+  text-align: center;
+  @media (min-width: 482px) {
+    text-align: left;
+  }
+`;
 const NewsLetter = () => {
   return (
     <div>
-      <h3>Newsletter</h3>
-      <Form>
-        <form>
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required=""
-          />
-          <button type="submit">
-            <FaEnvelope color="white" size="1em" />
-          </button>
-        </form>
-      </Form>
+      <CenterText>
+        <h3>Newsletter</h3>
+        <Form>
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required=""
+            />
+            <button type="submit">
+              <FaEnvelope color="white" size="1em" />
+            </button>
+          </form>
+        </Form>
 
-      <FooterPara>
-        vehicula velit sagittis vehicula. Duis posuere ex in mollis iaculis.
-        Suspendisse tincidunt velit sagittis vehicula
-      </FooterPara>
+        <FooterPara>
+          vehicula velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+          Suspendisse tincidunt velit sagittis vehicula
+        </FooterPara>
 
-      <MediaIcon />
-      <a href="#">
-        <FaFacebook color="white" size="1.2em" />
-      </a>
-      <MediaIcon>
+        <MediaIcon />
         <a href="#">
-          <FaTwitter color="white" size="1.2em" />
+          <FaFacebook color="white" size="1.2em" />
         </a>
-      </MediaIcon>
-      <MediaIcon>
-        <a href="#">
-          <FaRss color="white" size="1.2em" />
-        </a>
-      </MediaIcon>
+        <MediaIcon>
+          <a href="#">
+            <FaTwitter color="white" size="1.2em" />
+          </a>
+        </MediaIcon>
+        <MediaIcon>
+          <a href="#">
+            <FaRss color="white" size="1.2em" />
+          </a>
+        </MediaIcon>
+      </CenterText>
     </div>
   );
 };

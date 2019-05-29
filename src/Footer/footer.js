@@ -8,7 +8,11 @@ const FooterSection = styled.div`
   background-color: midnightblue;
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  padding: 1rem;
+
+  @media (min-width: 576px) {
+    padding: 2rem;
+  }
 `;
 const FooterContainer = styled.div`
   display: flex;
@@ -16,8 +20,14 @@ const FooterContainer = styled.div`
   width: 1100px;
   line-height: 200%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 482px) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 792px) {
+    grid-template-columns: 2fr 2fr 3fr 2fr;
+  }
+  @media (min-width: 1030px) {
     grid-template-columns: 4fr 3fr 3fr 2fr;
   }
 `;
