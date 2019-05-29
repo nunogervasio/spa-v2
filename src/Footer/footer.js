@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Section } from "../components/section";
-import { Container } from "../components/container";
+import NewsLetter from "./newsLetter";
+import Address from "./address";
+import { FaArrowUp } from "react-icons/fa";
 
 const FooterSection = styled.div`
-  background-color: peru;
-  background-color: cornflowerblue;
+  background-color: midnightblue;
   display: flex;
   justify-content: center;
   padding: 4rem;
@@ -15,113 +15,95 @@ const FooterContainer = styled.div`
   flex-direction: column;
   width: 1100px;
   line-height: 200%;
+
   @media (min-width: 768px) {
-    flex-direction: row;
-
-    justify-content: space-around;
-  }
-
-  ul {
-    list-style: none;
-    li:first-child {
-      font-size: 1.2rem;
-      padding-bottom: 0.5rem;
-      border-bottom: #444 solid 1px;
-      margin-bottom: 1rem;
-    }
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr 2fr;
   }
 `;
 
 const FooterBottom = styled.div`
-  background: #333;
-  color: wheat;
-  padding: 1rem;
+  background: #000;
+  color: #fff;
+  padding: 1.5em;
   text-align: center;
+  font-size: 14px;
 `;
-
+const FooterColumn = styled.div`
+  .center {
+    text-align: center;
+  }
+  li a {
+    font-size: 14px;
+    color: darkgray;
+  }
+  color: #fff;
+`;
+const Top = styled.div`
+  text-align: center;
+  background: midnightblue;
+  padding: 15px 0 15px 0;
+`;
 const Footer = () => {
   return (
     <React.Fragment>
       <FooterSection>
         <FooterContainer>
-          <ul>
-            <li>Shop & Learn</li>
-            <li>
-              <a href="#">Music</a>
-            </li>
-            <li>
-              <a href="#">Movies</a>
-            </li>
-            <li>
-              <a href="#">Shows</a>
-            </li>
-            <li>
-              <a href="#">Apps</a>
-            </li>
-            <li>
-              <a href="#">Gift Cards</a>
-            </li>
-          </ul>
+          <FooterColumn>
+            <Address />
+          </FooterColumn>
 
-          <ul>
-            <li>Orange Store</li>
-            <li>
-              <a href="#">Find a Store</a>
-            </li>
-            <li>
-              <a href="#">Today at Orange</a>
-            </li>
-            <li>
-              <a href="#">Orange Camp</a>
-            </li>
-            <li>
-              <a href="#">Financing</a>
-            </li>
-            <li>
-              <a href="#">Order Status</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li>Education & Business</li>
-            <li>
-              <a href="#">Orange & Education</a>
-            </li>
-            <li>
-              <a href="#">Shop For College</a>
-            </li>
-            <li>
-              <a href="#">Orange & Business</a>
-            </li>
-            <li>
-              <a href="#">Shop For Business</a>
-            </li>
-            <li>
-              <a href="#">Jobs</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li>About Orange</li>
-            <li>
-              <a href="#">Newsroom</a>
-            </li>
-            <li>
-              <a href="#">Orange Leadership</a>
-            </li>
-            <li>
-              <a href="#">Investors</a>
-            </li>
-            <li>
-              <a href="#">Events</a>
-            </li>
-            <li>
-              <a href="#">Contact Orange</a>
-            </li>
-          </ul>
+          <FooterColumn>
+            <ul className="center">
+              <h3>Service Links</h3>
+              <li>
+                <a href="service.html">Sea Freight</a>
+              </li>
+              <li>
+                <a href="service.html">Air Freights</a>
+              </li>
+              <li>
+                <a href="service.html">Land Transport</a>
+              </li>
+              <li>
+                <a href="service.html">Logistic Solutions</a>
+              </li>
+              <li>
+                <a href="service.html">Warehousing</a>
+              </li>
+            </ul>
+          </FooterColumn>
+          <FooterColumn>
+            <NewsLetter />
+          </FooterColumn>
+          <FooterColumn>
+            <ul className="center">
+              <h3>Quick links</h3>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </FooterColumn>
         </FooterContainer>
       </FooterSection>
-      <FooterBottom>Copyright &copy; 2019 Cargos</FooterBottom>
+      <Top>
+        <a href="#">
+          <FaArrowUp color="white" size="1.5em" />
+        </a>
+      </Top>
+      <FooterBottom>&copy; 2019 Cargos</FooterBottom>
     </React.Fragment>
   );
 };
