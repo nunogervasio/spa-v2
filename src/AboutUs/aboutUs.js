@@ -9,6 +9,7 @@ import {
   Image
 } from "../components";
 import img from "../images/delivery-truck.svg";
+import { FaPlane } from "react-icons/fa";
 const AboutSection = styled(Section)`
   flex-direction: column;
   @media (min-width: 992px) {
@@ -66,19 +67,38 @@ const AboutUs = () => {
       </TitleContainer>
       <GridContainer>
         <ServiceCard>
-          <ServiceImage src={img} />
-          <Title>Land Transport</Title>
+          <span className="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x" style={{ color: "gold" }} />
+            <i class="fas fa-ship fa-stack-1x fa-inverse" />
+          </span>
+          <Title>Sea Freight</Title>
         </ServiceCard>
         <ServiceCard>
-          <ServiceImage src={img} />
-          <Title>Land Transport</Title>
+          {/* <FaPlane size="3em" className="fa-stack fa-2x" /> */}
+          <span className="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x" style={{ color: "tomato" }} />
+            <i class="fas fa-plane fa-stack-1x fa-inverse" />
+          </span>
+          <Title>Air Freight</Title>
         </ServiceCard>
         <ServiceCard>
-          <ServiceImage src={img} />
-          <Title>Land Transport</Title>
+          <span className="fa-stack fa-2x">
+            <i
+              class="fas fa-circle fa-stack-2x"
+              style={{ color: "dodgerblue" }}
+            />
+            <i class="fas fa-cubes fa-stack-1x fa-inverse" />
+          </span>
+          <Title>Warehousing</Title>
         </ServiceCard>
         <ServiceCard>
-          <ServiceImage src={img} />
+          <span className="fa-stack fa-2x">
+            <i
+              class="fas fa-circle fa-stack-2x"
+              style={{ color: "forestgreen" }}
+            />
+            <i class="fas fa-truck fa-stack-1x fa-inverse" />
+          </span>
           <Title>Land Transport</Title>
         </ServiceCard>
       </GridContainer>
