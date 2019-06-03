@@ -5,6 +5,7 @@ import { Section, Container, Title, Card } from "../components";
 const TeamContainer = styled(Container)`
   display: flex;
   flex-direction: column;
+  margin: 2rem 1rem;
 `;
 
 const TitleContainer = styled(Container)`
