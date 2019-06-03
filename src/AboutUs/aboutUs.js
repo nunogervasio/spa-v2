@@ -8,8 +8,8 @@ import {
   Paragraph,
   Image
 } from "../components";
-import img from "../images/delivery-truck.svg";
-import { FaPlane } from "react-icons/fa";
+import ServiceCard from "../components/serviceCard";
+
 const AboutSection = styled(Section)`
   flex-direction: column;
   @media (min-width: 992px) {
@@ -42,11 +42,7 @@ const TitlePrimary = styled(Title)`
   font-size: 2.2rem;
   margin-top: 0;
 `;
-const ServiceCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+
 const ServiceImage = styled(Image)`
   width: 75px;
 `;
@@ -66,47 +62,10 @@ const AboutUs = () => {
         <Button>Read More</Button>
       </TitleContainer>
       <GridContainer>
-        <ServiceCard>
-          <span className="fa-stack fa-2x">
-            <i
-              className="fas fa-circle fa-stack-2x"
-              style={{ color: "gold" }}
-            />
-            <i className="fas fa-ship fa-stack-1x fa-inverse" />
-          </span>
-          <Title>Sea Freight</Title>
-        </ServiceCard>
-        <ServiceCard>
-          {/* <FaPlane size="3em" className="fa-stack fa-2x" /> */}
-          <span className="fa-stack fa-2x">
-            <i
-              className="fas fa-circle fa-stack-2x"
-              style={{ color: "tomato" }}
-            />
-            <i className="fas fa-plane fa-stack-1x fa-inverse" />
-          </span>
-          <Title>Air Freight</Title>
-        </ServiceCard>
-        <ServiceCard>
-          <span className="fa-stack fa-2x">
-            <i
-              className="fas fa-circle fa-stack-2x"
-              style={{ color: "dodgerblue" }}
-            />
-            <i className="fas fa-cubes fa-stack-1x fa-inverse" />
-          </span>
-          <Title>Warehousing</Title>
-        </ServiceCard>
-        <ServiceCard>
-          <span className="fa-stack fa-2x">
-            <i
-              className="fas fa-circle fa-stack-2x"
-              style={{ color: "forestgreen" }}
-            />
-            <i className="fas fa-truck fa-stack-1x fa-inverse" />
-          </span>
-          <Title>Land Transport</Title>
-        </ServiceCard>
+        <ServiceCard title="Sea Freight" color="gold" icon="ship" />
+        <ServiceCard title="Air Freight" color="tomato" icon="plane" />
+        <ServiceCard title="Warehousing" color="dodgerblue" icon="cubes" />
+        <ServiceCard title="Land Transport" color="forestgreen" icon="truck" />
       </GridContainer>
     </AboutSection>
   );
