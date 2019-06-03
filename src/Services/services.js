@@ -7,6 +7,7 @@ const ServicesSection = styled(Section)`
   background: whitesmoke;
 `;
 const ServiceContainer = styled(Container)`
+  margin: 3rem 1rem;
   @media (min-width: 768px) {
     flex-direction: column;
   }
