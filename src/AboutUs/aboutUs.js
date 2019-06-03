@@ -68,36 +68,42 @@ const AboutUs = () => {
       <GridContainer>
         <ServiceCard>
           <span className="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x" style={{ color: "gold" }} />
-            <i class="fas fa-ship fa-stack-1x fa-inverse" />
+            <i
+              className="fas fa-circle fa-stack-2x"
+              style={{ color: "gold" }}
+            />
+            <i className="fas fa-ship fa-stack-1x fa-inverse" />
           </span>
           <Title>Sea Freight</Title>
         </ServiceCard>
         <ServiceCard>
           {/* <FaPlane size="3em" className="fa-stack fa-2x" /> */}
           <span className="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x" style={{ color: "tomato" }} />
-            <i class="fas fa-plane fa-stack-1x fa-inverse" />
+            <i
+              className="fas fa-circle fa-stack-2x"
+              style={{ color: "tomato" }}
+            />
+            <i className="fas fa-plane fa-stack-1x fa-inverse" />
           </span>
           <Title>Air Freight</Title>
         </ServiceCard>
         <ServiceCard>
           <span className="fa-stack fa-2x">
             <i
-              class="fas fa-circle fa-stack-2x"
+              className="fas fa-circle fa-stack-2x"
               style={{ color: "dodgerblue" }}
             />
-            <i class="fas fa-cubes fa-stack-1x fa-inverse" />
+            <i className="fas fa-cubes fa-stack-1x fa-inverse" />
           </span>
           <Title>Warehousing</Title>
         </ServiceCard>
         <ServiceCard>
           <span className="fa-stack fa-2x">
             <i
-              class="fas fa-circle fa-stack-2x"
+              className="fas fa-circle fa-stack-2x"
               style={{ color: "forestgreen" }}
             />
-            <i class="fas fa-truck fa-stack-1x fa-inverse" />
+            <i className="fas fa-truck fa-stack-1x fa-inverse" />
           </span>
           <Title>Land Transport</Title>
         </ServiceCard>
