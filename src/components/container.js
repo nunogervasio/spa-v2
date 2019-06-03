@@ -8,6 +8,6 @@ export const Container = styled.div`
   max-width: 1100px;
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    ${"" /* flex-direction: row; */}
   }
 `;
