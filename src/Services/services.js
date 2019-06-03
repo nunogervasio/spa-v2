@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Section, Container, Title, Image, Paragraph } from "../components";
-import img from "../images/delivery-truck.svg";
+import ServiceCard from "../components/serviceCard";
 
 const ServicesSection = styled(Section)`
   background: whitesmoke;
@@ -27,20 +27,16 @@ const TitleContainer = styled(Container)`
 `;
 
 const FlexContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-const ServiceCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  margin: 2rem;
-  max-width: 200px;
-`;
-const ServiceImage = styled(Image)`
-  width: 75px;
+  display: grid;
+  grid-template-column: 1fr;
+  @media (min-width: 440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const Services = () => {
@@ -55,70 +51,55 @@ const Services = () => {
         </TitleContainer>
 
         <FlexContainer>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
-          <ServiceCard>
-            <ServiceImage src={img} />
-            <Title>Land Transport</Title>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum nibh urna Lorem ipsum dolor sit amet, consectetur
-            </Paragraph>
-          </ServiceCard>
+          <ServiceCard
+            title="Timely Delivery"
+            color="tomato"
+            icon="clock"
+            details={true}
+          />
+          <ServiceCard
+            title="Land Transport"
+            color="gold"
+            icon="truck"
+            details={true}
+          />
+          <ServiceCard
+            title="Sea Freight"
+            color="forestgreen"
+            icon="ship"
+            details={true}
+          />
+          <ServiceCard
+            title="Air Freight"
+            color="dodgerblue"
+            icon="plane"
+            details={true}
+          />
+          <ServiceCard
+            title="Packaging and Store"
+            color="forestgreen"
+            icon="database"
+            details={true}
+          />
+          <ServiceCard
+            title="Logistic Solutions"
+            color="dodgerblue"
+            icon="check-square"
+            details={true}
+          />
+
+          <ServiceCard
+            title="Warehousing"
+            color="tomato"
+            icon="cubes"
+            details={true}
+          />
+          <ServiceCard
+            title="Quickest Cargo"
+            color="gold"
+            icon="history"
+            details={true}
+          />
         </FlexContainer>
       </ServiceContainer>
     </ServicesSection>

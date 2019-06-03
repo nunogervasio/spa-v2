@@ -32,10 +32,12 @@ const TitleContainer = styled(Container)`
 `;
 const GridContainer = styled(Container)`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
   }
 `;
 const TitlePrimary = styled(Title)`
