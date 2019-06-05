@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background: ${props => (props.primary ? "gainsboro" : "white")};
-  color: ${props => (props.primary ? "white" : "cornflowerblue")};
+  color: ${props => (props.primary ? "white" : "midnightblue")};
 
   font-size: 1em;
   ${"" /* margin: 1em; */}
@@ -12,5 +12,9 @@ export const Button = styled.button`
   ${"" /* max-width: 150px; */}
   :hover {
     cursor: pointer;
+    background: gainsboro;
+  }
+  :focus {
+    outline: none;
   }
 `;
