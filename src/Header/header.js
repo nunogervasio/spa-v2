@@ -3,12 +3,15 @@ import styled from "styled-components";
 import { Container, Section, Title, Paragraph, Button } from "../components";
 import img from "../images/loading-dock2.jpg";
 
-const HeaderSection = styled(Section)`
+const HeaderSection = styled.div`
   flex-direction: column;
   ${"" /* height: 75vh; */}
   background-color: midnightblue;
   ${"" /* height: 600px; */}
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 500px;
+  margin: 2rem 0;
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,17 +25,26 @@ const HeaderImage = styled.div`
 
 const HeaderTitle = styled(Title)`
   text-align: left;
-  font-size: 4rem;
-  margin-bottom: 0;
+  font-size: 3rem;
+  margin: 0;
 `;
 const TitleWrapper = styled.div`
   padding-left: 4em;
   padding-right: 2em;
   color: lavenderblush;
-  display: flex;
-  flex-direction: column;
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 `;
 
+const HeaderPara = styled(Paragraph)`
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin: 2rem 0;
+`;
 const Header = () => {
   return (
     <HeaderSection>
@@ -40,11 +52,11 @@ const Header = () => {
         <HeaderTitle>
           We Provide The Best Solution For Your Transport
         </HeaderTitle>
-        <Paragraph>
+        <HeaderPara left>
           eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum
           dolor sit amet, eiusmod tempor incididunt ut labore et consectetur
           adipiscing
-        </Paragraph>
+        </HeaderPara>
         <Button>Contact Us</Button>
       </TitleWrapper>
       <HeaderImage />
