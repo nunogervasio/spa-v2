@@ -75,7 +75,7 @@ const AboutUs = () => {
     <AboutSection>
       <AboutContainer>
         <TitleContainer>
-          <Title>About Us</Title>
+          <Title gray>About Us</Title>
           <TitlePrimary>What We Provide The Best</TitlePrimary>
           <Paragraph>
             sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem
