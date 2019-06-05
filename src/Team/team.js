@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { Section, Container, Title, Card } from "../components";
+import t1 from "../images/t1.jpg";
+import t2 from "../images/t2.jpg";
+import t3 from "../images/t3.jpg";
+import t4 from "../images/t4.jpg";
 
 const TeamContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  margin: 2rem 1rem;
+  margin: 3rem 1rem;
 `;
 
 const TitleContainer = styled(Container)`
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 0 0 1.5rem 0;
 `;
 
 const TitlePrimary = styled(Title)`
@@ -38,10 +42,10 @@ const Team = () => {
           <TitlePrimary>Our Expert Team Members</TitlePrimary>
         </TitleContainer>
         <CardContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card img={t1} name="Jack Will" title="Manager" />
+          <Card img={t2} name="Simon Bond" title="Delivery Person" />
+          <Card img={t3} name="Lesley Carter" title="Technician" />
+          <Card img={t4} name="Michael Smitch" title="Director" />
         </CardContainer>
       </TeamContainer>
     </Section>
