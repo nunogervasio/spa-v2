@@ -24,7 +24,7 @@ const AboutContainer = styled.div`
   flex-direction: column;
   margin: 2rem 1rem;
   @media (min-width: 992px) {
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
     max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,7 +75,7 @@ const AboutUs = () => {
     <AboutSection>
       <AboutContainer>
         <TitleContainer>
-          <Title>About Us</Title>
+          <Title gray>About Us</Title>
           <TitlePrimary>What We Provide The Best</TitlePrimary>
           <Paragraph>
             sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem

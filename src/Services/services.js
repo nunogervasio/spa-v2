@@ -45,7 +45,7 @@ const Services = () => {
     <ServicesSection>
       <ServiceContainer>
         <TitleContainer>
-          <Title>Services</Title>
+          <Title gray>Services</Title>
           <TitlePrimary>
             We Provide The Best Transportation Services
           </TitlePrimary>
