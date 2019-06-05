@@ -31,6 +31,7 @@ const CardContainer = styled.div`
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 2.5rem;
   }
 `;
 const Team = () => {
