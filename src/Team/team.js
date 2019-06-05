@@ -34,7 +34,7 @@ const Team = () => {
     <Section>
       <TeamContainer>
         <TitleContainer>
-          <Title>Our Team</Title>
+          <Title gray>Our Team</Title>
           <TitlePrimary>Our Expert Team Members</TitlePrimary>
         </TitleContainer>
         <CardContainer>
