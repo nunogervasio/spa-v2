@@ -10,4 +10,7 @@ export const Button = styled.button`
   border: 2px solid gainsboro;
   border-radius: 3px;
   ${"" /* max-width: 150px; */}
+  :hover {
+    cursor: pointer;
+  }
 `;
