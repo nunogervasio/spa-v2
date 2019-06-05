@@ -42,7 +42,7 @@ a {
 
 /* mouse over link */
 :hover {
-  color: hotpink;
+  color: inherent;
 }
 
 /* selected link */
