@@ -7,10 +7,12 @@ import "./App.css";
 import Header from "./Header/header";
 import Team from "./Team/team";
 import Services from "./Services/services";
+import NavMenu from "./Navbar/testmenu";
 
 function App() {
   return (
     <div>
+      <NavMenu />
       <Header />
       <AboutUs />
       <Services />
