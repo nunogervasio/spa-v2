@@ -1,26 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import ResponsiveMenu from "./responsiveMenu";
+import { FaBars } from "react-icons/fa";
+import { FaRegWindowClose } from "react-icons/fa";
 
 const Menu = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h1 {
-    color: midnightblue;
-    display: inline;
-    margin: 0;
-  }
   ul {
     padding: 0;
     margin: 0;
   }
 
   li {
-    display: inline;
-    list-style-type: none;
-    margin-left: 30px;
+    display: block;
+    padding: 0.5rem 0;
+    margin: 0;
   }
 
   a {
@@ -29,16 +22,15 @@ const Menu = styled.div`
     color: midnightblue;
 
     &:hover {
-      color: pink;
+      color: royalblue;
+      transition: 0.5s;
     }
   }
 
-  @media (max-width: 576px) {
-    padding: 10px 0;
+  @media (min-width: 700px) {
     li {
-      padding: 10px 0;
-      display: block;
-      margin-left: 0;
+      display: inline;
+      padding-left: 2rem;
     }
   }
 `;
@@ -47,21 +39,22 @@ const NavMenu = () => {
   return (
     <React.Fragment>
       <ResponsiveMenu
+        menuOpenButton={<FaBars size={20} color="midnightblue" />}
+        menuCloseButton={<FaRegWindowClose size={20} color="midnightblue" />}
         menu={
           <Menu>
-            <h1>Cargo</h1>
             <ul>
               <li>
-                <a>About</a>
+                <a href="">About</a>
               </li>
               <li>
-                <a>Home</a>
+                <a href="">Home</a>
               </li>
               <li>
-                <a>Services</a>
+                <a href="">Services</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="">Contact</a>
               </li>
             </ul>
           </Menu>

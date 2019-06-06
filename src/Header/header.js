@@ -24,9 +24,12 @@ const HeaderImage = styled.div`
 
 const HeaderTitle = styled(Title)`
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 0;
   @media (min-width: 482px) {
+    font-size: 2.3rem;
+  }
+  @media (min-width: 700px) {
     font-size: 3rem;
   }
 `;
@@ -49,13 +52,14 @@ const TitleWrapper = styled.div`
 
 const HeaderPara = styled(Paragraph)`
   font-size: 1rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   margin: 2rem 0;
   line-height: 1;
   color: darkgray;
   @media (min-width: 482px) {
     letter-spacing: 2px;
     line-height: 1.5;
+    font-size: 1rem;
   }
 `;
 const Header = () => {
@@ -71,7 +75,7 @@ const Header = () => {
             dolor sit amet, eiusmod tempor incididunt ut labore et consectetur
             adipiscing
           </HeaderPara>
-          <Button>Contact Us</Button>
+          <Button dark>Contact Us</Button>
         </TitleWrapper>
         <HeaderImage />
       </HeaderContainer>
